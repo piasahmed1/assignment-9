@@ -7,7 +7,6 @@ const Login = () => {
 const Navigate = useNavigate();
 const location = useLocation();
  
-
 const { signInUser, signInWithGoogle } = useContext(AuthContex);
 
   const handleLogin = e =>{

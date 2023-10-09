@@ -20,7 +20,7 @@ console.log(greetign);
 
 #### Answer: B: ReferenceError: greetign is not defined
 
-<i>In the code snippet, there's a typo. You declared a variable called greeting, but you assigned an empty object to a variable named greetign (with a typo). Because greetign was not declared as a variable, you'll get a ReferenceError.
+<i>It is important to note that the variable greeting is not the same as the variable greetign. These are two different variables, even though they have similar names. This is because the variable names are case-sensitive in JavaScript.
 </i>
 
 </p>
@@ -46,7 +46,7 @@ sum(1, "2");
 
 #### Answer: C: "12"
 
-<i>the sum function takes two parameters a and b and attempts to add them together using the + operator. When you call sum(1, "2"), JavaScript performs type coercion by converting the number 1 to a string and then concatenates.</i>
+<i>In the code snippet you provided, the first operand (1) is a number and the second operand ("2") is a string. JavaScript will automatically convert the string "2" to the number 2 before performing the addition operation</i>
 
 </p>
 </details>
@@ -72,7 +72,7 @@ console.log(food);
 
 #### Answer: C: ['🍝', '🍕', '🍫', '🥑', '🍔']
 
-<i>we first create an array food containing four food emojis. Then, we create an object info with a property favoriteFood that is initially set to the first element of the food array, which is "🍕". Later in the code, we change the value of info.favoriteFood to "🍝"./i>
+<i>In the code you provided, you are assigning the object { favoriteFood: food[0] } to the constant variable info. Then, you are changing the value of the favoriteFood property to "🍝". This is allowed, because you are not reassigning the info variable itself/i>
 
 </p>
 </details>
@@ -97,7 +97,7 @@ console.log(sayHi());
 
 #### Answer: B: Hi there, undefined
 
-<i>In the given code, the sayHi function expects one argument name, which is used to construct a greeting string. However, when you call sayHi() without providing an argument, name becomes undefined, and the function still executes.</i>
+<i>To avoid this, you can either pass a default value to the name parameter, or you can check if the name parameter is undefined before using it. For example:</i>
 
 </p>
 </details>
@@ -125,7 +125,8 @@ console.log(count);
 
 #### Answer: C: 3
 
-<i>In the provided code, you have an array nums containing four elements: [0, 1, 2, 3]. The forEach method iterates over each element of the array and executes the provided callback function. In the callback function, there's an if condition that checks if num is truthy (i.e., not equal to 0).</i>
+<i>The forEach() method iterates over the elements of an array and executes a callback function for each element. The callback function takes the current element and the array index as arguments.
+</i>
 
 </p>
 </details>

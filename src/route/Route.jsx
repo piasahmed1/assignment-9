@@ -9,6 +9,7 @@ import ServiceRules from "../rules/ServiceRules";
 import PrivateRoute from "../private/PrivateRoute";
 import ErrorPage from "../component/errorPage";
 
+
 const myCreateRoute = createBrowserRouter([
     {
         path: '/',
