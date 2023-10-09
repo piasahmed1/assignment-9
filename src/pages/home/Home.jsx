@@ -12,11 +12,11 @@ const Home = () => {
   return (
     <div>
 
-      <div className="w-[360px] md:w-[1000px] lg:w-[1220px] mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         <Banner></Banner>
       </div>
       <Service cards={cards}></Service>
-      <div className="w-[360px] md:w-[1000px] lg:w-[1220px] mx-auto">
+      <div className="max-w-screen-xl mx-auto">
         <Banner2></Banner2>
       </div>
       <div>
