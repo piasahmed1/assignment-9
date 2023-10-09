@@ -20,7 +20,6 @@ const createUser = (email, password) =>{
     return createUserWithEmailAndPassword (auth, email, password)
 }
 
-
 const signInUser = (email, password) =>{
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password)
@@ -38,7 +37,6 @@ const logOut = () =>{
     setLoading(true);
     return signOut(auth);
 }
-
 
 useEffect(() =>{
 const unSubscribe = onAuthStateChanged(auth, currentUser =>{

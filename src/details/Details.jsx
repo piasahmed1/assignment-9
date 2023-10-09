@@ -5,13 +5,16 @@ const Details = () => {
     const [card, setCard] = useState()
     const { id } = useParams()
 
+
     const cards = useLoaderData()
     console.log(card);
     useEffect(() => {
         const findCard = cards?.find(cart => cart.id == id)
         setCard(findCard)
 
-    }, [id, card])
+    }, 
+    
+    [id, card])
     return (
         <div>
 

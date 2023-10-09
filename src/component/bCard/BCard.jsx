@@ -8,7 +8,6 @@ const BCard = () => {
       <div className="card  w-[300px]  bg-purple-700">
         <figure><img className='w-[250px] h-[200px] rounded-t-lg' src={imagge} /></figure>
 
-
       </div>
       <div className="card  w-[300px]  bg-red-700 ">
         <figure><img className='w-[400px] h-[200px] rounded-t-lg' src={image} /></figure>
